@@ -4,12 +4,11 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1"
-      mc:Ignorable="d" 
-      d:DesignHeight="399" d:DesignWidth="722"
-      Title="Page_Main">
+      mc:Ignorable="d"
+      Title="Page_Main" Width="700" Height="400">
 
     <Grid>
-        <Button x:Name="btn_main_txsetting" Content="TX Setting" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Click="Btn_main_txsetting_Click" Margin="10,25,0,0"/>
-
+        <Button x:Name="btn_main_txsetting" Content="TX Setting" Click="Btn_main_txsetting_Click" Margin="46,44,515,325" Height="Auto"/>
     </Grid>
+    
 </Page>
