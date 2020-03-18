@@ -25,9 +25,9 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+
         private void Btn_main_txsetting_Click(object sender, RoutedEventArgs e)
         {
-
             if (NavigationService.CanGoForward)
             {
                 NavigationService.GoForward();
@@ -40,7 +40,22 @@ namespace WpfApp1
 
                 NavigationService.Navigate(page);
             }
+        }
 
+        private void Btn_main_start_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("시작 버튼 눌림", "정보", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+
+            Page_startloading page = new Page_startloading();
+
+            page.Title = "TX start loading";
+
+            NavigationService.Navigate(page);
+        }
+
+        private void Btn_main_stop_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("정지 버튼 눌림", "정보", MessageBoxButton.OK, MessageBoxImage.Asterisk);
         }
     }
 }
