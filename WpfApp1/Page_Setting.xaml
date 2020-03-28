@@ -34,10 +34,35 @@
         <TextBox x:Name="textbox_qvbrqulity" HorizontalAlignment="Left" Height="27" Margin="318,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" IsEnabled="False" PreviewKeyDown="Textbox_qvbrqulity_PreviewKeyDown"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Height="28" Width="95"><Run Text="GOP 크기"/></TextBlock>
-        <TextBox x:Name="textbox_gopsize" HorizontalAlignment="Left" Height="28" Margin="318,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"  PreviewKeyDown="Textbox_qvbrqulity_PreviewKeyDown"/>
+        <ComboBox HorizontalAlignment="Left" Margin="318,276,0,0" VerticalAlignment="Top" Width="183" SelectionChanged="ComboBox_SelectionChanged" Height="32">
+            <ComboBoxItem Content="5" />
+            <ComboBoxItem Content="10"  />
+            <ComboBoxItem Content="15" />
+            <ComboBoxItem Content="20" />
+            <ComboBoxItem Content="25" />
+            <ComboBoxItem Content="30" />
+            <ComboBoxItem Content="60" />
+        </ComboBox>
+       
 
         <TextBlock HorizontalAlignment="Left" Margin="41,339,0,0" TextWrapping="Wrap" Text="비트레이트" VerticalAlignment="Top" FontSize="18" Height="27" Width="108"/>
-        <TextBox x:Name="textbox_bitrate" HorizontalAlignment="Left" Height="28" Margin="318,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"  PreviewKeyDown="Textbox_qvbrqulity_PreviewKeyDown"/>
+        <ComboBox HorizontalAlignment="Left" Margin="318,336,0,0" VerticalAlignment="Top" Width="183" SelectionChanged="ComboBox_SelectionChanged" Height="32">
+            <ComboBoxItem Content="5000" />
+            <ComboBoxItem Content="6000"  />
+            <ComboBoxItem Content="7000" />
+            <ComboBoxItem Content="8000" />
+            <ComboBoxItem Content="9000" />
+            <ComboBoxItem Content="10000" />
+            <ComboBoxItem Content="11000" />
+            <ComboBoxItem Content="12000" />
+            <ComboBoxItem Content="13000" />
+            <ComboBoxItem Content="14000" />
+            <ComboBoxItem Content="15000" />
+            <ComboBoxItem Content="16000" />
+            <ComboBoxItem Content="17000" />
+            <ComboBoxItem Content="18000" />
+            <ComboBoxItem Content="19000" />
+        </ComboBox>
 
         <Button x:Name="btn_setting_ok" Content="설정 완료" HorizontalAlignment="Left" Margin="592,358,0,0" VerticalAlignment="Top" Width="98" Click="Btn_setting_ok_Click"/>
         

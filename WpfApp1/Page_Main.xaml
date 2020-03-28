@@ -23,12 +23,17 @@
 
         <Border x:Name="boarder_main_rxinfo" BorderBrush="#FF7C0BEE" BorderThickness="3" Height="287" Margin="46,103,45,0" VerticalAlignment="Top">
             <Grid Margin="0,0,-3,0">
-                <Label Content="RX Port 설정" HorizontalAlignment="Left" Margin="21,34,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="45" Width="225" FontFamily="MoeumT R"/>
+                <Label Content="RX Port 설정" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="45" Width="225" FontFamily="MoeumT R"/>
+                <Label Content="Your IP" HorizontalAlignment="Left" Margin="21,52,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
                 <Label Content="Video Port" HorizontalAlignment="Left" Margin="21,84,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
                 <Label Content="Audio Port" HorizontalAlignment="Left" Margin="21,121,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
                 <Label Content="HID Port1" HorizontalAlignment="Left" Margin="21,158,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
                 <Label Content="HID Port2" HorizontalAlignment="Left" Margin="21,195,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
                 <Label Content="Session Port" HorizontalAlignment="Left" Margin="21,232,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+
+                <ComboBox x:Name="page_main_combobox_ip" HorizontalAlignment="Left" Margin="166,57,0,0" VerticalAlignment="Top" Width="181"/>
+
+
                 <TextBox HorizontalAlignment="Left" Height="23" Margin="166,93,0,0" TextWrapping="Wrap" Text="1233" VerticalAlignment="Top" Width="80" Background="#FF837A7A" AcceptsTab="True"/>
                 <TextBox HorizontalAlignment="Left" Height="23" Margin="166,130,0,0" TextWrapping="Wrap" Text="1234" VerticalAlignment="Top" Width="80" Background="#FF837A7A" AcceptsTab="True"/>
                 <TextBox HorizontalAlignment="Left" Height="23" Margin="166,167,0,0" TextWrapping="Wrap" Text="1235" VerticalAlignment="Top" Width="80" Background="#FF837A7A" AcceptsTab="True"/>

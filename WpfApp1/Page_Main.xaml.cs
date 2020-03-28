@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +21,29 @@ namespace WpfApp1
     /// </summary>
     public partial class Page_Main : Page
     {
+
+        string hostname = null;
+        IPAddress[] ips;
+
+
         public Page_Main()
         {
             InitializeComponent();
+
+            // Init IP Addr
+            hostname = Dns.GetHostName();
+            ips = Dns.GetHostAddresses(hostname);
+
+            foreach(IPAddress ip in ips)
+            {
+
+                GroupBox groupbox = new GroupBox();
+                groupbox.Header = "Network IP Address";
+                groupbox.Content = ip.ToString();
+
+                page_main_combobox_ip.Items.Add(groupbox);
+            }
+
         }
 
 
